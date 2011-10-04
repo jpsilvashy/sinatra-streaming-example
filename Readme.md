@@ -14,4 +14,5 @@ curl https://sinatra-streaming-example.herokuapp.com/stream
 $ heroku create --stack cedar
 $ heroku addons:add redistogo:nano
 $ git push heroku master
+$ heroku scale web=1 worker=1
 ```
