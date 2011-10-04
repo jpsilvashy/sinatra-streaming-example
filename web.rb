@@ -8,7 +8,8 @@ end
 get '/stream' do
   puts "connection made"
 
-  uri = URI.parse(ENV["REDISTOGO_URL"])
+  redis_url = ENV["REDISTOGO_URL"] || "redis://localhost:6379"
+  uri = URI.parse(redis_url)
   r = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
 
   stream do |out|

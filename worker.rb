@@ -1,6 +1,7 @@
 require 'redis'
 
-uri = URI.parse(ENV["REDISTOGO_URL"])
+redis_url = ENV["REDISTOGO_URL"] || "redis://localhost:6379"
+uri = URI.parse(redis_url)
 r = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
 
 while true do
