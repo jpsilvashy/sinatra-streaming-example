@@ -13,7 +13,7 @@ curl -v https://sinatra-streaming-example.herokuapp.com/stream
 ```bash
 $ bundle install
 $ bundle exec foreman start
-curl -v http://localhost:5000
+$ curl -v http://localhost:5000
 ```
 
 ## Deploying your own
