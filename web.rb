@@ -2,7 +2,7 @@ require 'redis'
 require 'sinatra'
 
 get '/' do
-  "curl https://sinatra-streaming-example.herokuapp.com/stream"
+  "<pre>curl https://sinatra-streaming-example.herokuapp.com/stream</pre>"
 end
 
 get '/stream' do
