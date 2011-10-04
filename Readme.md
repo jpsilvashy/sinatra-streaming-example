@@ -16,7 +16,7 @@ $ bundle exec foreman start
 $ curl -v http://localhost:5000
 ```
 
-## Deploy your own
+## Deploy your own to Heroku
 
 ```bash
 $ heroku create --stack cedar
