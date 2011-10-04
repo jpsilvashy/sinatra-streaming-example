@@ -5,7 +5,7 @@ A simple demonstration of streaming Redis pub/sub data over HTTP via Sinatra's n
 ## See it live:
 
 ```bash
-curl https://sinatra-streaming-example.herokuapp.com/stream
+curl -v https://sinatra-streaming-example.herokuapp.com/stream
 ```
 
 ## Deploying your own
