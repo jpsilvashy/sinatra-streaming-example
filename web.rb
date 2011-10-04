@@ -6,6 +6,8 @@ get '/' do
 end
 
 get '/stream' do
+  puts "connection made"
+
   uri = URI.parse(ENV["REDISTOGO_URL"])
   r = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
 
